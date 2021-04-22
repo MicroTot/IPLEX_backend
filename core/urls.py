@@ -6,6 +6,5 @@ router = routers.SimpleRouter()
 router.register(r"", EmployeeViewSet)
 
 urlpatterns = [
-    path('', include(router.urls)),
-
+    path('api/', include(router.urls)),
 ]
